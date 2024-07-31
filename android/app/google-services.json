@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "262979750910",
+    "project_id": "lmsapp-aa06b",
+    "storage_bucket": "lmsapp-aa06b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262979750910:android:59c758ce5524aa2ebcceaf",
+        "android_client_info": {
+          "package_name": "com.lmsapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyJpw4um8y9Nfy9SLiKanNNiru-fw-X5c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
