@@ -1,7 +1,8 @@
 import {StatusBar, StyleSheet, Text, View} from 'react-native';
 import React, {useEffect} from 'react';
-import {BG_COLOR, THEME_COLOR} from '../../utils/colors';
+import {BG_COLOR, TEXT_COLOR, THEME_COLOR} from '../../utils/colors';
 import {useNavigation} from '@react-navigation/native';
+import { moderateScale } from 'react-native-size-matters';
 
 const Splash = () => {
   const navigation = useNavigation();
@@ -20,8 +21,9 @@ const Splash = () => {
           fontWeight: 'bold',
           textAlign: 'center',
         }}>
-        Logo
+        Image add here 
       </Text>
+      <Text style={styles.tagline}>A common place for tutors & learners</Text>
     </View>
   );
 };
@@ -34,4 +36,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: THEME_COLOR,
   },
+  tagline:{
+    color:TEXT_COLOR,
+    fontWeight:"600",
+    fontSize: moderateScale(16)
+  }
 });
