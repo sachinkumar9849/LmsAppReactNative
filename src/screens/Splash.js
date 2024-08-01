@@ -1,6 +1,6 @@
 import {StatusBar, StyleSheet, Text, View} from 'react-native';
 import React, {useEffect} from 'react';
-import {BG_COLOR, TEXT_COLOR, THEME_COLOR} from '../../utils/colors';
+import {BG_COLOR, TEXT_COLOR, THEME_COLOR} from '../utils/colors';
 import {useNavigation} from '@react-navigation/native';
 import { moderateScale } from 'react-native-size-matters';
 

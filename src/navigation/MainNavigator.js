@@ -2,8 +2,13 @@ import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack'; // Import createStackNavigator
-import Splash from '../screens/tutor/Splash';
-import ChooseUserType from '../screens/tutor/ChooseUserType';
+// import Splash from '../screens/tutor/Splash';
+
+import Login from '../screens/login/Login';
+import ChooseUserType from '../screens/ChooseUserType';
+import Splash from '../screens/Splash';
+import TutorHome from '../screens/tutor/TutorHome';
+
 
 const Stack = createStackNavigator();
 
@@ -13,6 +18,8 @@ const MainNavigator = () => {
       <Stack.Navigator>
         <Stack.Screen name="Splash" component={Splash} options={{ headerShown: false }} />
         <Stack.Screen name="ChooseUserType" component={ChooseUserType} options={{ headerShown: false }} />
+        <Stack.Screen name="Login" component={Login} options={{ headerShown: false }} />
+        <Stack.Screen name="TutorHome" component={TutorHome} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
