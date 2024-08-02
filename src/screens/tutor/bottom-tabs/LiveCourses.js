@@ -3,11 +3,16 @@ import React from 'react'
 import { BG_COLOR, THEME_COLOR, WHITE } from '../../../utils/colors'
 import { moderateScale, scale, verticalScale } from 'react-native-size-matters'
 import { useNavigation } from '@react-navigation/native'
+import { FlatList } from 'react-native-gesture-handler'
+import CourseItem from '../../../components/cources/CourseItem'
 
 const LiveCourses = () => {
   const navigation= useNavigation();
   return (
     <View style={styles.container}>
+      <FlatList data={[1,2,3]} renderItem={({item, index})=>{
+        return <CourseItem item={item} index={index}  data={[1,2,3]}/>
+      }}/>
      <TouchableOpacity style={styles.addBtn} onPress={()=>{
       navigation.navigate("AddCourse")
      }}>
